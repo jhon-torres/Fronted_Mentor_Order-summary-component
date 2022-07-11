@@ -1,0 +1,175 @@
+.frame {
+    position: absolute;
+    left: 50%;
+    width: 1440px; /*1440px wave*/
+    height: 100vh;
+    margin-left: -720px; /* mitad del width */
+    overflow: hidden;
+    font-family: 'Red Hat Display','Open Sans', Helvetica, sans-serif;
+    background: #E0E8FF url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.card {
+    width: 400px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 1px 16px 20px -5px #abb1c4;
+    -webkit-box-shadow: 1px 16px 20px -5px #abb1c4;
+    -moz-box-shadow: 1px 16px 20px -5px #abb1c4;
+}
+
+
+.banner {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 180px;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;  
+    background: url(/images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo {
+    margin: 40px 40px 20px 40px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+p {
+    margin-left: 40px;
+    margin-right: 40px;
+    color: #8E95A7;
+    font-weight: 550;
+    font-size: 16px;
+}
+
+.mensaje {    
+    text-align: center;
+}
+
+.box-plan {
+    display: grid;
+    grid-template-columns: 68px 1fr 80px;
+    grid-gap: 10px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    background: #F8F9FE;
+}
+
+.icono {
+    align-self: center;
+    justify-self: center;
+    width: 48px;
+    height: 48px;
+    margin: 15px;
+    grid-column-start: 1;
+    background: url(/images/icon-music.svg);
+
+}
+
+h4, .precio {
+    margin-left: 5px;
+    text-align: left;
+}
+
+h4 {
+    margin-bottom: 5px;
+}
+
+.precio {
+    margin-top: 5px;
+}
+
+.change{
+    align-self: center;
+    text-align: left;
+    padding-right: 15px;
+}
+
+.change a {
+    color: #382AE1;
+    font-weight: 550;
+}
+
+.change a:hover {
+    color: #766CF1;
+    text-decoration: none;
+}
+
+.boton-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin: 40px 40px 15px 40px;
+    background: #382AE1;
+    border-radius: 10px;
+    box-shadow: 1px 16px 20px -5px #abb1c4;
+    -webkit-box-shadow: 1px 16px 20px -5px #abb1c4;
+    -moz-box-shadow: 1px 16px 20px -5px #abb1c4;
+    cursor: pointer;
+}
+
+.boton-1:hover {
+    background: #766CF1;
+}
+
+.boton-1 span {
+    color: white;
+    font-weight: 550;
+}
+
+.boton-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin: 5px 40px 5px 40px;
+    background: transparent;
+    color: #8E95A7;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.boton-2:hover {
+    color: black;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-bottom: 15px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 376px) {
+    .frame {
+        width: 100%;
+        margin-left: -50%;
+    }
+    .card {
+        width: 345px;
+    }
+    .box-plan {
+        grid-gap: 0px;
+    }
+  }
